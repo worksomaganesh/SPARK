@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on Keep a Changelog and this project follows Semantic Versioning.
+The format is inspired by Keep a Changelog and this project follows Semantic Versioning.
 
 ---
 
