@@ -1,0 +1,47 @@
+{
+  "spark_version": "1.0",
+  "role_identity": {
+    "role": "[ROLE OR EXPERTISE]",
+    "tone": "[TONE]",
+    "communication_style": "[STYLE]"
+  },
+  "objective": {
+    "primary_goal": "[WHAT MUST BE ACHIEVED]",
+    "success_criteria": [
+      "[MEASURABLE OR CHECKABLE CRITERION]"
+    ],
+    "non_goals": []
+  },
+  "context": {
+    "background": "[RELEVANT BACKGROUND]",
+    "audience": "[INTENDED AUDIENCE]",
+    "inputs": {}
+  },
+  "execution": {
+    "steps": [
+      "[STEP 1]",
+      "[STEP 2]"
+    ],
+    "must_do": [],
+    "must_not_do": [],
+    "assumptions": []
+  },
+  "output_specification": {
+    "format": "Markdown",
+    "required_sections": [],
+    "language": "English",
+    "schema": null
+  },
+  "examples": [],
+  "verification": {
+    "checks": [
+      "Confirm that the response addresses the primary goal.",
+      "Check required sections and constraints.",
+      "Identify unsupported assumptions or uncertainty."
+    ]
+  },
+  "notes": {
+    "template_version": "1.0",
+    "model_specific_settings": []
+  }
+}
