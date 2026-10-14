@@ -27,6 +27,7 @@
 - [Features](#features)
 - [Framework Overview](#framework-overview)
 - [Quick Example](#quick-example)
+- [JSON Structures for SPARK](#json-structures-for-spark)
 - [Repository Structure](#repository-structure)
 - [Future Roadmap](#future-roadmap)
 - [License](#license)
@@ -302,6 +303,30 @@ Where appropriate, include practical examples, implementation tips, and low-cost
 
 Compared to the traditional prompt, the SPARK version provides significantly greater clarity, structure, context, and direction. By explicitly defining the role, objective, execution plan, expected output, and verification process, it reduces ambiguity and enables AI systems to produce responses that are more relevant, actionable, and consistent.
 
+# JSON Structures for SPARK
+
+SPARK's eight-part architecture can be represented as structured JSON when prompts need to be generated programmatically, reused as data, inspected field by field, or validated before use.
+
+**JSON is an optional representation for SPARK, not a replacement for the framework.** JSON-formatted prompts can improve organization and automation, but they are not automatically better than clear natural-language prompts and do not guarantee accurate model output. The best format depends on the task and the consuming application.
+
+The dedicated guide includes:
+- A mapping between SPARK's eight sections and JSON fields
+- A reusable JSON prompt template
+- A worked example
+- The distinction between JSON input prompts, JSON responses, and schema-constrained output
+- A starter JSON Schema and practical validation guidance
+- Security considerations and best practices
+
+Start here:
+
+- [JSON Structures Guide](framework/json-structures/README.md)
+- [Reusable SPARK JSON Prompt Template](framework/json-structures/prompt-template.json)
+- [SPARK Prompt JSON Schema](framework/json-structures/spark-prompt.schema.json)
+
+Use this approach when structured prompt data helps a tool or workflow. For simple one-off requests, the existing SPARK Markdown format or clear natural language may be easier.
+
+---
+
 # Repository Structure
 
 The SPARK repository is organized to provide a clear separation between the core framework, reusable templates, practical examples, AI-specific skills, documentation, and prompt libraries. Every directory has a well-defined purpose, making the project easy to navigate, maintain, and extend.
@@ -318,7 +343,11 @@ SPARK/
 │   ├── Framework.md
 │   ├── Philosophy.md
 │   ├── Best-Practices.md
-│   └── Common-Mistakes.md
+│   ├── Common-Mistakes.md
+│   └── json-structures/
+│       ├── README.md
+│       ├── prompt-template.json
+│       └── spark-prompt.schema.json
 │
 ├── templates/
 │   ├── General.md
@@ -365,6 +394,14 @@ Contains the theoretical foundation of SPARK.
 Inside this directory, readers will find the complete framework specification, the design philosophy behind SPARK, recommended best practices, and common mistakes to avoid while designing prompts.
 
 This folder should be read first after the README.
+
+---
+
+### `framework/json-structures/`
+
+Contains the optional JSON representation and validation resources for SPARK prompts. Use it when prompts need to be generated or processed programmatically, reused as structured data, or checked against a schema. JSON is a representation option, not a requirement for every SPARK prompt.
+
+See [the JSON Structures guide](framework/json-structures/README.md), [the reusable template](framework/json-structures/prompt-template.json), and [the prompt record schema](framework/json-structures/spark-prompt.schema.json).
 
 ---
 
