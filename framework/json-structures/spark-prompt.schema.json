@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPARK Prompt Record",
+  "type": "object",
+  "required": [
+    "spark_version",
+    "role_identity",
+    "objective",
+    "context",
+    "execution",
+    "output_specification",
+    "examples",
+    "verification",
+    "notes"
+  ],
+  "properties": {
+    "spark_version": {
+      "type": "string"
+    },
+    "role_identity": {
+      "type": "object"
+    },
+    "objective": {
+      "type": "object"
+    },
+    "context": {
+      "type": "object"
+    },
+    "execution": {
+      "type": "object"
+    },
+    "output_specification": {
+      "type": "object"
+    },
+    "examples": {
+      "type": "array"
+    },
+    "verification": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}
